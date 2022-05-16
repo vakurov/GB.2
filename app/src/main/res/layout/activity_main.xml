@@ -1,106 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/lake"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView1"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginStart="150dp"
-        android:text="@string/textview" />
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:textSize="12sp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/editText1"
-        android:autofillHints="name" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoTextView"
+        android:enabled="false"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:textSize="20sp" />
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="@string/btn1" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/switch1"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:text="@string/checkBox" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="@string/toggleButton" />
-
-    <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/buttonSeven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginStart="150dp"
-        android:text="@string/textView2" />
+        android:layout_below="@id/editText"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="7"
+        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textSize="10sp"
-        android:ems="10"
-        android:inputType="phone"
-        android:hint="phone"
-        android:autofillHints="name" />
+    <Button
+        android:id="@+id/buttonEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/buttonSeven"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="8"
+        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textSize="10sp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="number"
-        android:autofillHints="name" />
+    <Button
+        android:id="@+id/buttonNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/buttonEight"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="9"
+        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textSize="10sp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="textPassword"
-        android:autofillHints="name" />
+    <Button
+        android:id="@+id/buttonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSeven"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="4"
+        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textSize="10sp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="textEmailAddress"
-        android:autofillHints="name" />
+    <Button
+        android:id="@+id/buttonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonEight"
+        android:layout_alignEnd="@id/buttonEight"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="5"
+        android:textSize="20sp" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNine"
+        android:layout_alignEnd="@id/buttonNine"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="6"
+        android:textSize="20sp" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonFour"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonFive"
+
+        android:layout_alignEnd="@id/buttonEight"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSix"
+        android:layout_alignEnd="@id/buttonNine"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOne"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="."
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTwo"
+        android:layout_alignEnd="@id/buttonEight"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="0"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonThree"
+        android:layout_alignEnd="@id/buttonNine"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="="
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonNine"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/buttonNine"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="/"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonSix"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/buttonSix"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="*"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonThree"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/buttonThree"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonEqual"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/buttonEqual"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="+"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_alignStart="@id/buttonAdd"
+        android:layout_alignEnd="@id/buttonAdd"
+        android:alpha="0.5"
+        android:backgroundTint="@color/black"
+        android:text="C"
+        android:textSize="20sp" />
+</RelativeLayout>
+
+    </RelativeLayout>
