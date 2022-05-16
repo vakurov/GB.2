@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GB.2</string>
+    <string name="textview">1 задание</string>
+    <string name="editText1">Введите текст</string>
+    <string name="btn1">Button</string>
+    <string name="switch1">Switch</string>
+    <string name="checkBox">CheckBox</string>
+    <string name="toggleButton">ToggleButton</string>
+    <string name="textView2">2 задание</string>
 </resources>
