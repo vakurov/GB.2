@@ -15,8 +15,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        >
+        android:layout_centerVertical="true">
 
         <TextView
             android:id="@+id/infoTextView"
@@ -36,196 +35,128 @@
             android:maxLines="2"
             android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/buttonSeven"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="7"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSeven"
+            android:layout_below="@id/editText"
+            style="@style/btnStyle"
+            android:text="@string/buttonSeven" />
 
-    <Button
-        android:id="@+id/buttonEight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
-        android:layout_marginStart="5dp"
-        android:layout_toRightOf="@id/buttonSeven"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="8"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEight"
+            style="@style/btnStyle"
+            android:layout_below="@id/editText"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/buttonSeven"
+            android:text="@string/buttonEight" />
 
-    <Button
-        android:id="@+id/buttonNine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
-        android:layout_marginStart="5dp"
-        android:layout_toRightOf="@id/buttonEight"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="9"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonNine"
+            style="@style/btnStyle"
+            android:layout_below="@id/editText"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/buttonEight"
+            android:text="@string/buttonNine" />
 
-    <Button
-        android:id="@+id/buttonFour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonSeven"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="4"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFour"
+            style="@style/btnStyle"
+            android:layout_below="@id/buttonSeven"
+            android:text="@string/buttonFour" />
 
-    <Button
-        android:id="@+id/buttonFive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonEight"
-        android:layout_alignEnd="@id/buttonEight"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="5"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFive"
+            style="@style/btnStyle"
+            android:layout_below="@id/buttonEight"
+            android:layout_alignEnd="@id/buttonEight"
+            android:text="@string/buttonFive" />
 
-    <Button
-        android:id="@+id/buttonSix"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonNine"
-        android:layout_alignEnd="@id/buttonNine"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="6"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSix"
+            style="@style/btnStyle"
+            android:layout_below="@id/buttonNine"
+            android:layout_alignEnd="@id/buttonNine"
+            android:text="@string/buttonSix" />
 
-    <Button
-        android:id="@+id/buttonOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonFour"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="1"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonOne"
+            android:layout_below="@id/buttonFour"
+            style="@style/btnStyle"
+            android:text="@string/buttonOne" />
 
-    <Button
-        android:id="@+id/buttonTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonFive"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonTwo"
+            android:layout_below="@id/buttonFive"
+            android:layout_alignEnd="@id/buttonEight"
+            android:text="@string/buttonTwo"
+            style="@style/btnStyle" />
 
-        android:layout_alignEnd="@id/buttonEight"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="2"
-        android:textSize="20sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonThree"
+            style="@style/btnStyle"
+            android:layout_below="@id/buttonSix"
+            android:layout_alignEnd="@id/buttonNine"
+            android:text="@string/buttonThree" />
 
-    <Button
-        android:id="@+id/buttonThree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonSix"
-        android:layout_alignEnd="@id/buttonNine"
-        android:alpha="0.5"
-        android:backgroundTint="@color/black"
-        android:text="3"
-        android:textSize="20sp" />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/buttonOne"
-            android:alpha="0.5"
             android:backgroundTint="@color/black"
-            android:text="."
-            android:textSize="20sp" />
+            style="@style/btnStyle"
+            android:layout_below="@id/buttonOne"
+            android:text="@string/buttonDot" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonZero"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_below="@id/buttonTwo"
             android:layout_alignEnd="@id/buttonEight"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="0"
-            android:textSize="20sp" />
+            android:text="@string/buttonZero" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEqual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_below="@id/buttonThree"
             android:layout_alignEnd="@id/buttonNine"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="="
-            android:textSize="20sp" />
+            android:text="@string/buttonEqual" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDivide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_alignTop="@id/buttonNine"
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@id/buttonNine"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="/"
-            android:textSize="20sp" />
+            android:text="@string/buttonDivide" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMultiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_alignTop="@id/buttonSix"
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@id/buttonSix"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="*"
-            android:textSize="20sp" />
+            android:text="@string/buttonMultiply" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSubtract"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_alignTop="@id/buttonThree"
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@id/buttonThree"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="-"
-            android:textSize="20sp" />
+            android:text="@string/buttonSubtract" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_alignTop="@id/buttonEqual"
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@id/buttonEqual"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="+"
-            android:textSize="20sp" />
+            android:text="@string/buttonAdd" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonClear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnStyle"
             android:layout_below="@id/buttonAdd"
             android:layout_alignStart="@id/buttonAdd"
             android:layout_alignEnd="@id/buttonAdd"
-            android:alpha="0.5"
-            android:backgroundTint="@color/black"
-            android:text="C"
-            android:textSize="20sp" />
-</RelativeLayout>
-
+            android:text="@string/buttonClear" />
     </RelativeLayout>
+
+</RelativeLayout>
