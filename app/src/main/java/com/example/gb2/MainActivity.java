@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonSubtract;
     Button buttonAdd;
     Button buttonClear;
+    Button buttonSettings;
     EditText editText;
     TextView infoTextView;
     private double valueOne = Double.NaN;
@@ -63,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
         buttonNine.setOnClickListener(view -> editText.setText(editText.getText() + "9"));
         buttonZero.setOnClickListener(view -> editText.setText(editText.getText() + "0"));
         buttonDot.setOnClickListener(view -> editText.setText(editText.getText() + "."));
+
+        buttonSettings.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(i);
+        });
+
 
         buttonClear.setOnClickListener(view -> {
             if(editText.getText().length() > 0) {
@@ -156,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
         buttonClear = findViewById(R.id.buttonClear);
         editText = findViewById(R.id.editText);
         infoTextView = findViewById(R.id.infoTextView);
+        buttonSettings = findViewById(R.id.buttonSettings);
 
     }
 

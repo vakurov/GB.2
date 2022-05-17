@@ -13,9 +13,10 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/relative"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true">
+        android:layout_centerInParent="true">
 
         <TextView
             android:id="@+id/infoTextView"
@@ -37,8 +38,8 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSeven"
-            android:layout_below="@id/editText"
             style="@style/btnStyle"
+            android:layout_below="@id/editText"
             android:text="@string/buttonSeven" />
 
         <com.google.android.material.button.MaterialButton
@@ -99,7 +100,6 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDot"
-            android:backgroundTint="@color/black"
             style="@style/btnStyle"
             android:layout_below="@id/buttonOne"
             android:text="@string/buttonDot" />
@@ -157,6 +157,18 @@
             android:layout_alignStart="@id/buttonAdd"
             android:layout_alignEnd="@id/buttonAdd"
             android:text="@string/buttonClear" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSettings"
+            style="@style/btnStyle"
+            android:layout_below="@id/buttonClear"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.7"
+            android:drawableLeft="@drawable/ic_baseline_settings_24"
+            android:text="@string/buttonSettings"
+            android:textSize="15sp" />
     </RelativeLayout>
+
+
 
 </RelativeLayout>

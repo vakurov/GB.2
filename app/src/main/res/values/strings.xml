@@ -24,4 +24,8 @@
     <string name="buttonSubtract">-</string>
     <string name="buttonAdd">+</string>
     <string name="buttonClear">C</string>
+    <string name="titleSettings">Выбор темы :</string>
+    <string name="rb1">Светлая тема</string>
+    <string name="rb2">Темная тема</string>
+    <string name="buttonSettings">Настройки</string>
 </resources>
